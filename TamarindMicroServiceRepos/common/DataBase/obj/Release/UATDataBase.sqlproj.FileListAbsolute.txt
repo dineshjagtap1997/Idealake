@@ -1,0 +1,8 @@
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\bin\Release\UATDataBase.dacpac
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\UATDataBase.sqlproj.AssemblyReference.cache
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\Model.xml
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\refactor.xml
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\postdeploy.sql
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\predeploy.sql
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\UATDataBase.dll
+C:\Users\arif_shaikh\Source\Repos\tamarind-astra-25022025\UATDataBase\obj\Release\UATDataBase.pdb

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[TransportRateDetails] (
+    [TransportRateDetailsID] UNIQUEIDENTIFIER NOT NULL,
+    [TransportRateID]        INT              NOT NULL,
+    [VehicleTypeID]          INT              NOT NULL,
+    [VehicleBaseTypeID]      VARCHAR (10)     NOT NULL,
+    [RateValidFrom]          DATETIME         NOT NULL,
+    [RateValidTo]            DATETIME         NOT NULL,
+    [Basic]                  NUMERIC (18, 2)  NULL,
+    [Parking]                NUMERIC (18, 2)  NULL,
+    [Porterage]              NUMERIC (18, 2)  NULL,
+    [TollTax]                NUMERIC (18, 2)  NULL,
+    [NightHalt]              NUMERIC (18, 2)  NULL,
+    [DA]                     NUMERIC (18, 2)  NULL,
+    [Assistance]             NUMERIC (18, 2)  NULL,
+    [Misc]                   NUMERIC (18, 2)  NULL,
+    [Tax]                    NUMERIC (18, 2)  NULL,
+    [Total]                  NUMERIC (18, 2)  NOT NULL,
+    [MISSequenceNo]          INT              NULL,
+    [ExtraChargePerKm]       NUMERIC (18, 2)  NULL,
+    [ExtraChargePerHr]       NUMERIC (18, 2)  NULL,
+    [ShowOnline]             BIT              NOT NULL,
+    [IsActive]               BIT              NOT NULL,
+    [OldID]                  INT              NULL,
+    CONSTRAINT [PK_TransportRateDetails] PRIMARY KEY CLUSTERED ([TransportRateDetailsID] ASC)
+);
+

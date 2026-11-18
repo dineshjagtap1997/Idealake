@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[MonumentRateDetailsNew] (
+    [MonumentRateDetailID] INT             NULL,
+    [CardNo]               NVARCHAR (255)  NULL,
+    [RateDetailsID]        NVARCHAR (255)  NULL,
+    [ContractHeading]      NVARCHAR (1000) NULL,
+    [City_IATACode]        NVARCHAR (255)  NULL,
+    [City]                 NVARCHAR (255)  NULL,
+    [MoumentService_ID]    FLOAT (53)      NULL,
+    [MonumentService]      NVARCHAR (255)  NULL,
+    [RateMode]             NVARCHAR (255)  NULL,
+    [VendorSAPCode]        NVARCHAR (255)  NULL,
+    [Vendor]               NVARCHAR (255)  NULL,
+    [Nationality_ID]       FLOAT (53)      NULL,
+    [Nationality]          NVARCHAR (255)  NULL,
+    [ValidFrom]            DATETIME        NULL,
+    [ValidTo]              DATETIME        NULL,
+    [Curr]                 NVARCHAR (255)  NULL,
+    [AdultRate]            FLOAT (53)      NULL,
+    [Tax%]                 FLOAT (53)      NULL,
+    [ChildRate]            FLOAT (53)      NULL,
+    [Tax%1]                FLOAT (53)      NULL,
+    [MIS]                  FLOAT (53)      NULL,
+    [Active]               NVARCHAR (255)  NULL,
+    [XoRemark]             NVARCHAR (1000) NULL,
+    [InfoForOps]           NVARCHAR (2000) NULL
+);
+

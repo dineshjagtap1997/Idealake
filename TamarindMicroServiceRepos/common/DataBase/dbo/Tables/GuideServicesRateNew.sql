@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[GuideServicesRateNew] (
+    [CardNo]          NVARCHAR (255)  NULL,
+    [RateDetailsID]   NVARCHAR (255)  NULL,
+    [ContractHeading] DATETIME        NULL,
+    [City_IATACode]   NVARCHAR (255)  NULL,
+    [City]            NVARCHAR (255)  NULL,
+    [GuideService_ID] FLOAT (53)      NULL,
+    [GuideService]    NVARCHAR (1000) NULL,
+    [RateMode]        NVARCHAR (255)  NULL,
+    [LanguageID]      NVARCHAR (255)  NULL,
+    [Language]        NVARCHAR (255)  NULL,
+    [VendorSAPCode]   NVARCHAR (255)  NULL,
+    [Vendor]          NVARCHAR (255)  NULL,
+    [FromPax]         FLOAT (53)      NULL,
+    [ToPax]           FLOAT (53)      NULL,
+    [ValidFrom]       DATETIME        NULL,
+    [ValidTo]         DATETIME        NULL,
+    [Curr]            NVARCHAR (255)  NULL,
+    [Rate]            FLOAT (53)      NULL,
+    [Tax %]           FLOAT (53)      NULL,
+    [MIS]             FLOAT (53)      NULL,
+    [Active]          NVARCHAR (255)  NULL,
+    [XoRemark]        NVARCHAR (500)  NULL,
+    [InfoForOps]      NVARCHAR (2000) NULL,
+    [GuideRateID]     INT             NULL
+);
+

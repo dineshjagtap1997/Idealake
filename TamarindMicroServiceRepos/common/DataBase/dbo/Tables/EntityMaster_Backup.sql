@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[EntityMaster_Backup] (
+    [ID]                    INT              IDENTITY (1, 1) NOT NULL,
+    [LegalName]             VARCHAR (150)    NOT NULL,
+    [RegisteredAddress]     VARCHAR (150)    NOT NULL,
+    [CountryOfRegistration] VARCHAR (150)    NOT NULL,
+    [PostalCode]            VARCHAR (15)     NOT NULL,
+    [SAPCompCode]           VARCHAR (4)      NOT NULL,
+    [CIN]                   VARCHAR (30)     NULL,
+    [PAN]                   VARCHAR (10)     NULL,
+    [TAN]                   VARCHAR (10)     NULL,
+    [VAT]                   VARCHAR (30)     NULL,
+    [TRN]                   VARCHAR (30)     NULL,
+    [MSMENo]                VARCHAR (30)     NULL,
+    [RegisteredEmailID]     VARCHAR (30)     NULL,
+    [TwoCharacterCompCode]  VARCHAR (2)      NULL,
+    [IsActive]              BIT              NULL,
+    [Operation]             VARCHAR (10)     NOT NULL,
+    [OperationBy]           UNIQUEIDENTIFIER NOT NULL,
+    [OperationOn]           DATETIME         NOT NULL,
+    [UpdatedBy]             UNIQUEIDENTIFIER NULL,
+    [UpdatedOn]             DATETIME         NULL,
+    [Fiscal_ID]             INT              NULL,
+    [IATA_Code]             VARCHAR (10)     NULL,
+    [IATO_Code]             VARCHAR (10)     NULL,
+    [TIDS_Code]             VARCHAR (10)     NULL
+);
+

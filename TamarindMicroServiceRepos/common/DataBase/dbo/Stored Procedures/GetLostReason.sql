@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE GetLostReason
+AS
+BEGIN
+    SELECT * FROM tbl_LostReason
+END;

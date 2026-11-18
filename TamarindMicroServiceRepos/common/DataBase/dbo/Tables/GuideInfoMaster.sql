@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[GuideInfoMaster] (
+    [GuideID]       INT              IDENTITY (1, 1) NOT NULL,
+    [Name]          VARCHAR (100)    NOT NULL,
+    [Salutation]    VARCHAR (10)     NOT NULL,
+    [Gender]        VARCHAR (10)     NOT NULL,
+    [StateIATACode] INT              NOT NULL,
+    [CityIATACode]  VARCHAR (5)      NOT NULL,
+    [StarRating]    VARCHAR (20)     NOT NULL,
+    [PhoneNo]       VARCHAR (15)     NOT NULL,
+    [MobileNo]      VARCHAR (15)     NOT NULL,
+    [Address]       VARCHAR (500)    NOT NULL,
+    [Languages]     VARCHAR (500)    NOT NULL,
+    [IsActive]      BIT              NOT NULL,
+    [Operation]     VARCHAR (10)     NOT NULL,
+    [OperationBy]   UNIQUEIDENTIFIER NOT NULL,
+    [OperationOn]   DATETIME         NOT NULL,
+    [Ranking]       VARCHAR (15)     NULL,
+    [IsDOT]         BIT              CONSTRAINT [DefaultValue_IsDOT] DEFAULT ((0)) NULL,
+    [IsState]       BIT              CONSTRAINT [DefaultValue_IsState] DEFAULT ((0)) NULL,
+    [IsASI]         BIT              CONSTRAINT [DefaultValue_IsASI] DEFAULT ((0)) NULL,
+    [UpdatedBy]     UNIQUEIDENTIFIER NULL,
+    [UpdatedOn]     DATETIME         NULL,
+    CONSTRAINT [PK_GuideInfoMaster] PRIMARY KEY CLUSTERED ([GuideID] ASC)
+);
+

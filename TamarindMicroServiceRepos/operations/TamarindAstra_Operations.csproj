@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Remove="appsettings.Operation.Operation.Development.json" />
+	  <Content Remove="appsettings.Operation.Operation.json" />
+	  <Content Remove="appsettings.Operation.Operation.Operations.Development.json" />
+	  <Content Remove="appsettings.Operation.Operation.Operations.json" />
+	  <Content Remove="appsettings.Operation.Operations.Development.json" />
+	  <Content Remove="appsettings.Operation.Operations.json" />
+	  <Content Remove="appsettings.Operations.Development.json" />
+	  <Content Remove="appsettings.Operations.json" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
+    <PackageReference Include="itext" Version="9.2.0" />
+    <PackageReference Include="itext.bouncy-castle-adapter" Version="9.2.0" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="MailKit" Version="4.11.0" />
+    <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.3" />
+    <PackageReference Include="Microsoft.AspNet.SignalR.Core" Version="2.4.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <PackageReference Include="MimeKit" Version="4.11.0" />
+    <PackageReference Include="OpenXmlPowerTools" Version="4.5.3.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.Operation.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="wwwroot\Uploads\Invoice\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\common\CommonClass.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+﻿CREATE TABLE [Booking].[HotelRateMealPlanMasterBooking] (
+    [QuotationHotelRateMealId] BIGINT           IDENTITY (1, 1) NOT NULL,
+    [MealTypeID]               INT              NULL,
+    [GstPercentage]            DECIMAL (9, 2)   NULL,
+    [GstAmount]                DECIMAL (18, 2)  NULL,
+    [NetAmountIncludingTax]    DECIMAL (18, 2)  NULL,
+    [NetAmountExcludingTax]    DECIMAL (18, 2)  NULL,
+    [IsActive]                 BIT              NULL,
+    [CreatedOn]                DATETIME         NULL,
+    [UpdatedOn]                DATETIME         NULL,
+    [MasterCommissionID]       INT              NULL,
+    [UpdatedBy]                UNIQUEIDENTIFIER NULL,
+    [CreatedBy]                UNIQUEIDENTIFIER NULL,
+    [IsMealDetails]            BIT              NULL,
+    [DefineAmount]             BIT              NULL,
+    [QuotationHotelRateID]     INT              NULL,
+    [SellingRate]              DECIMAL (18, 2)  NULL,
+    [ReasonMasterId]           INT              NULL,
+    [HotelRateID]              BIGINT           NULL,
+    [BookingID]                BIGINT           NULL,
+    [HotelRateDetailID]        INT              NULL,
+    [QuotationID]              BIGINT           NULL,
+    [AddedFromBooking]         BIT              NULL,
+    [IsSupplementary]          BIT              NULL,
+    [IsGross]                  BIT              NULL,
+    PRIMARY KEY CLUSTERED ([QuotationHotelRateMealId] ASC)
+);
+

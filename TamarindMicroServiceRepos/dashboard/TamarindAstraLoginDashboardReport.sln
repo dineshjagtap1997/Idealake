@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamarindAstraLoginDashboardReport", "TamarindAstraLoginDashboardReport.csproj", "{925818DE-606C-4BC3-A3DE-035B555CE6D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonClass", "..\common\CommonClass.csproj", "{A0437200-DF7A-4592-BC7F-183884BD23D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{925818DE-606C-4BC3-A3DE-035B555CE6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925818DE-606C-4BC3-A3DE-035B555CE6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925818DE-606C-4BC3-A3DE-035B555CE6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925818DE-606C-4BC3-A3DE-035B555CE6D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0437200-DF7A-4592-BC7F-183884BD23D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0437200-DF7A-4592-BC7F-183884BD23D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0437200-DF7A-4592-BC7F-183884BD23D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0437200-DF7A-4592-BC7F-183884BD23D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

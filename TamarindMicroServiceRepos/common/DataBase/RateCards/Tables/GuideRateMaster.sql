@@ -1,0 +1,27 @@
+﻿CREATE TABLE [RateCards].[GuideRateMaster] (
+    [GuideRateID]        BIGINT           IDENTITY (1, 1) NOT NULL,
+    [CardNumber]         VARCHAR (25)     NULL,
+    [Heading]            VARCHAR (100)    NULL,
+    [ContractDate]       DATETIME         NULL,
+    [RateCardModeTypeID] TINYINT          NULL,
+    [CurrencyID]         VARCHAR (5)      NULL,
+    [VendorID]           INT              NULL,
+    [LanguageID]         CHAR (3)         NULL,
+    [CityID]             VARCHAR (5)      NULL,
+    [GuideServiceID]     INT              NULL,
+    [InfoForOperation]   VARCHAR (MAX)    NULL,
+    [InfoForAgent]       VARCHAR (MAX)    NULL,
+    [InfoForRemark]      VARCHAR (MAX)    NULL,
+    [Notes]              VARCHAR (MAX)    NULL,
+    [IsActive]           BIT              DEFAULT ((1)) NULL,
+    [CreatedOn]          DATETIME         NULL,
+    [UpdatedOn]          DATETIME         NULL,
+    [UpdatedBy]          UNIQUEIDENTIFIER NULL,
+    [CreatedBy]          UNIQUEIDENTIFIER NULL,
+    [GstStatus]          VARCHAR (20)     NULL,
+    [StateID]            INT              NULL,
+    [XORemark]           INT              NULL,
+    [BookingID]          BIGINT           NULL,
+    PRIMARY KEY CLUSTERED ([GuideRateID] ASC)
+);
+

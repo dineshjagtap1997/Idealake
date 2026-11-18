@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[AgentLogin] (
+    [AgentLoginID]          INT           IDENTITY (1, 1) NOT NULL,
+    [AgentID]               INT           NOT NULL,
+    [Name]                  VARCHAR (50)  NULL,
+    [EmailAddress]          VARCHAR (200) NULL,
+    [UserID]                VARCHAR (50)  NULL,
+    [Password]              VARCHAR (50)  NULL,
+    [HintQuestion]          VARCHAR (500) NULL,
+    [HintAnswer]            VARCHAR (500) NULL,
+    [ContactNo]             VARCHAR (30)  NULL,
+    [IsAdminUser]           BIT           NULL,
+    [IsActive]              BIT           NOT NULL,
+    [IsEmail]               BIT           NOT NULL,
+    [StaffID]               VARCHAR (50)  NULL,
+    [AgentContactID]        INT           NULL,
+    [IsAccStatement]        BIT           NOT NULL,
+    [IsCCtoAdmin]           BIT           NOT NULL,
+    [IsOnlineBookingAccess] BIT           NOT NULL,
+    [IsFirstLogin]          TINYINT       CONSTRAINT [dt_AgentLogin_IsFirstLogin] DEFAULT ((0)) NOT NULL,
+    [IsXMLUser]             BIT           NULL,
+    [IsB2BLogin]            BIT           NULL,
+    [IsB2CLogin]            BIT           NULL,
+    CONSTRAINT [PK_AgentLogin] PRIMARY KEY CLUSTERED ([AgentLoginID] ASC)
+);
+

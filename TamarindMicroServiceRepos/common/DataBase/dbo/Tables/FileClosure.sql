@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[FileClosure] (
+    [ID]                       BIGINT         IDENTITY (1, 1) NOT NULL,
+    [Quotationid]              BIGINT         NULL,
+    [FHE]                      NVARCHAR (50)  NULL,
+    [FileCode]                 NVARCHAR (20)  NULL,
+    [Agentid]                  BIGINT         NULL,
+    [Pax]                      NVARCHAR (250) NULL,
+    [StartDate]                NVARCHAR (50)  NULL,
+    [EndDate]                  NVARCHAR (50)  NULL,
+    [OpsFileClosed]            BIT            NULL,
+    [OpsRemarks]               NVARCHAR (50)  NULL,
+    [LastOpsinsertedby]        NVARCHAR (50)  NULL,
+    [LastOpsDatetime]          NVARCHAR (50)  NULL,
+    [AcFileClosed]             BIT            NULL,
+    [AcRemarks]                NVARCHAR (50)  NULL,
+    [LastAcFileClosedBy]       NVARCHAR (50)  NULL,
+    [AcFileClosedDatetime]     NVARCHAR (50)  NULL,
+    [FinClosed]                BIT            NULL,
+    [LastFileClosedby]         NVARCHAR (50)  NULL,
+    [LastAcFileClosedDatetime] NVARCHAR (50)  NULL,
+    [Operation]                NVARCHAR (10)  NULL,
+    [CompanyId]                BIGINT         NULL,
+    [YearId]                   BIGINT         NULL,
+    CONSTRAINT [PK_FileClosure] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

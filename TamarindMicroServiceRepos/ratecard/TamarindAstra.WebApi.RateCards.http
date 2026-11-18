@@ -1,0 +1,6 @@
+@TamarindAstra.WebApi.RateCards_HostAddress = http://localhost:5073
+
+GET {{TamarindAstra.WebApi.RateCards_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

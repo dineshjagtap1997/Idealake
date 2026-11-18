@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[QuotationDetail] (
+    [DetailID]      INT             IDENTITY (1, 1) NOT NULL,
+    [QuotationID]   INT             NOT NULL,
+    [DayNo]         INT             NOT NULL,
+    [ServiceDate]   DATE            NOT NULL,
+    [CityID]        INT             NOT NULL,
+    [ServiceType]   VARCHAR (50)    NOT NULL,
+    [ServiceID]     INT             NULL,
+    [RoomCategory]  VARCHAR (100)   NULL,
+    [OccupancyType] VARCHAR (20)    NULL,
+    [GrossAmount]   DECIMAL (18, 2) NOT NULL,
+    [MarkupAmount]  DECIMAL (18, 2) DEFAULT ((0)) NULL,
+    [TaxAmount]     DECIMAL (18, 2) DEFAULT ((0)) NULL,
+    [SellingAmount] AS              (([GrossAmount]+[MarkupAmount])+[TaxAmount]) PERSISTED,
+    [CurrencyCode]  VARCHAR (10)    NULL,
+    [MealPlan]      VARCHAR (100)   NULL,
+    [BreakfastRate] DECIMAL (10, 2) NULL,
+    [LunchRate]     DECIMAL (10, 2) NULL,
+    [DinnerRate]    DECIMAL (10, 2) NULL,
+    [IsOptional]    BIT             DEFAULT ((0)) NULL,
+    [Remarks]       NVARCHAR (MAX)  NULL,
+    [Disclaimer]    NVARCHAR (200)  NULL,
+    [CreatedDate]   DATETIME        DEFAULT (getdate()) NULL,
+    PRIMARY KEY CLUSTERED ([DetailID] ASC)
+);
+

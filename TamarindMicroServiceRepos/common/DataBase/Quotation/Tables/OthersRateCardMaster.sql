@@ -1,0 +1,56 @@
+﻿CREATE TABLE [Quotation].[OthersRateCardMaster] (
+    [ID]                    BIGINT           IDENTITY (1, 1) NOT NULL,
+    [RateId]                BIGINT           NULL,
+    [ServiceID]             INT              NULL,
+    [RateType]              INT              NULL,
+    [CardNumber]            VARCHAR (255)    NULL,
+    [Heading]               VARCHAR (255)    NULL,
+    [ContractDate]          DATETIME         NULL,
+    [RateCardModeTypeID]    INT              NULL,
+    [CurrencyID]            VARCHAR (50)     NULL,
+    [VendorID]              INT              NULL,
+    [CityID]                VARCHAR (255)    NULL,
+    [StateID]               INT              NULL,
+    [GstStatus]             VARCHAR (50)     NULL,
+    [InfoForOperation]      VARCHAR (255)    NULL,
+    [InfoForAgent]          VARCHAR (255)    NULL,
+    [InfoForRemark]         VARCHAR (255)    NULL,
+    [IsActive]              BIT              NULL,
+    [CreatedOn]             DATETIME         NULL,
+    [UpdatedOn]             DATETIME         NULL,
+    [CreatedBy]             UNIQUEIDENTIFIER NULL,
+    [UpdatedBy]             UNIQUEIDENTIFIER NULL,
+    [LanguageID]            CHAR (5)         NULL,
+    [Notes]                 VARCHAR (255)    NULL,
+    [HotelID]               INT              NULL,
+    [HrsPerDay]             INT              NULL,
+    [KmPerDay]              INT              NULL,
+    [TransportModeTypeID]   INT              NULL,
+    [HotelZone]             VARCHAR (255)    NULL,
+    [CityID2]               VARCHAR (255)    NULL,
+    [ReferenceRateDetailID] BIGINT           NULL,
+    [TaxID]                 INT              NULL,
+    [ValidFrom]             DATETIME         NULL,
+    [ValidTo]               DATETIME         NULL,
+    [MISSequence]           VARCHAR (255)    NULL,
+    [NationalityID]         INT              NULL,
+    [RatePreferenceID]      INT              NULL,
+    [VehicleCategoryID]     INT              NULL,
+    [QuotationID]           BIGINT           NULL,
+    [Disclaimer]            NVARCHAR (500)   NULL,
+    [ReasonID]              INT              NULL,
+    [FromDate]              DATETIME         NULL,
+    [ToDate]                DATETIME         NULL,
+    [IsCustom]              BIT              DEFAULT ((0)) NULL,
+    [IsSummary]             BIT              DEFAULT ((0)) NOT NULL,
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    [ShowValueAddOns]       BIT              DEFAULT ((0)) NULL,
+>>>>>>> dev
+=======
+    [ShowValueAddOns]       BIT              DEFAULT ((0)) NULL,
+>>>>>>> 42bb970832000d684c5b89bfe253cf8daa6a25d6
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

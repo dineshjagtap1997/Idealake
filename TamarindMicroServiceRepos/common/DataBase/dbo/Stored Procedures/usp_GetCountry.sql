@@ -1,0 +1,18 @@
+﻿-----------------------------------
+-- CREATED BY : SHUBHAM KAMBLE
+-- CREATED FOR : TO FETCH COUNTRIES
+-- CREATE DATE : 24-10-2024
+-----------------------------------
+CREATE PROCEDURE usp_GetCountry
+@IATACode CHAR(4) NULL
+AS
+BEGIN
+	IF @IATACode IS NULL OR @IATACode = '' OR @IATACode = 'null'
+	BEGIN
+		SELECT * FROM COUNTRY 
+	END
+	ELSE
+	BEGIN
+		SELECT * FROM COUNTRY WHERE IATACode = @IATACode
+	END
+END

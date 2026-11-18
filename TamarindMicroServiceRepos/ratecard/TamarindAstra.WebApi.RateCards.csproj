@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BusinessLogic\Mappers\RateCards\Guide\**" />
+    <Content Remove="BusinessLogic\Mappers\RateCards\Guide\**" />
+    <EmbeddedResource Remove="BusinessLogic\Mappers\RateCards\Guide\**" />
+    <None Remove="BusinessLogic\Mappers\RateCards\Guide\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="MimeKit" Version="4.11.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BusinessLogic\Interfaces\Configuration\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\common\CommonClass.csproj" />
+  </ItemGroup>
+
+</Project>

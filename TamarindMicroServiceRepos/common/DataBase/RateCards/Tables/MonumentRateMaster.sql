@@ -1,0 +1,25 @@
+﻿CREATE TABLE [RateCards].[MonumentRateMaster] (
+    [MonumentRateID]     BIGINT           IDENTITY (1, 1) NOT NULL,
+    [CardNumber]         VARCHAR (30)     NULL,
+    [ContractDate]       DATETIME         NULL,
+    [Heading]            VARCHAR (100)    NULL,
+    [MonumentServiceID]  INT              NULL,
+    [RateCardModeTypeID] INT              NULL,
+    [InfoForOperation]   VARCHAR (2000)   NULL,
+    [InfoForAgent]       VARCHAR (100)    NULL,
+    [InfoForRemark]      NVARCHAR (MAX)   NULL,
+    [CityID]             VARCHAR (10)     NULL,
+    [StateID]            INT              NULL,
+    [GSTStatus]          VARCHAR (20)     NULL,
+    [VendorID]           INT              NULL,
+    [CurrencyID]         VARCHAR (10)     NULL,
+    [IsActive]           BIT              DEFAULT ((1)) NULL,
+    [CreatedBy]          UNIQUEIDENTIFIER NULL,
+    [UpdatedBy]          UNIQUEIDENTIFIER NULL,
+    [CreatedOn]          DATETIME         NULL,
+    [UpdatedOn]          DATETIME         NULL,
+    [XORemark]           INT              NULL,
+    [BookingID]          BIGINT           NULL,
+    PRIMARY KEY CLUSTERED ([MonumentRateID] ASC)
+);
+
